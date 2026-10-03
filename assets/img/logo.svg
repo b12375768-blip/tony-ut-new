@@ -1,0 +1,18 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" aria-label="Local Culture and Travel logo icon">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#E2571B"/>
+      <stop offset="100%" stop-color="#0E7C7B"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#glow)">
+    <rect x="4" y="4" width="52" height="52" rx="12" fill="url(#g)"/>
+    <path d="M30 14c-5 0-9 4-9 9 0 7 9 15 9 15s9-8 9-15c0-5-4-9-9-9zm0 12.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4z" fill="#fff"/>
+    <path d="M14 44h44" stroke="#fff" stroke-width="3.2" stroke-linecap="round" opacity=".9"/>
+    <path d="M20 52h32" stroke="#fff" stroke-width="2.6" stroke-linecap="round" opacity=".65"/>
+  </g>
+</svg>

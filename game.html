@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="favicon.svg">
+<title>Journeys — Local Culture &amp; Travel</title>
+<meta name="description" content="Interactive journey board from Local Culture &amp; Travel: plan a route, collect destinations and track your trips across local culture routes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html" aria-label="Local Culture and Travel home">
+      <img src="assets/img/logo.svg" alt="Local Culture and Travel icon"><span>Local Culture &amp; Travel</span>
+    </a>
+    <div class="menu" data-nav-menu>
+      <a href="index.html">Home</a>
+      <a href="game.html" style='opacity:1;font-weight:800'>Journeys</a>
+      <a href="leaderboard.html">Trip Log</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Field Notes</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="right">
+      <a class="btn ghost" data-nav-toggle>Menu</a>
+      <a class="btn" href="services.html">Plan a Trip</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="container">
+    <h1>Build Your Route</h1>
+    <p>Collect stops as you travel — markets, workshops, festivals and evening language hours. Each stop adds to your journey score and appears in your Trip Log.</p>
+    <div class="kudos">
+      <span class="pill">🎒 Collect Stops</span>
+      <span class="pill">⏱️ Take Your Time</span>
+      <span class="pill">🧭 Plan in Order</span>
+      <span class="pill">🎶 Rhythm Boost</span>
+    </div>
+  </div>
+</header>
+
+<!-- Interactive Board -->
+<section class="section container">
+  <div class="card" style="text-align:center">
+    <canvas id="game" width="900" height="520" style="width:100%;max-width:900px;border-radius:16px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(180deg,#07100e,#0f1c19)"></canvas>
+    <div style="height:12px"></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
+      <button class="btn" id="btn-pause" type="button">Pause</button>
+      <button class="btn ghost" id="btn-restart" type="button">Save score &amp; Restart</button>
+    </div>
+    <p style="opacity:.8;margin-top:14px">Move with the arrow keys or A/D, or drag on the board. Press P to pause, R to save and restart. Dodge the red herrings, collect the teal landmarks.</p>
+  </div>
+</section>
+
+<!-- Local Culture Section -->
+<section class="section container">
+  <h2>The Soul of a Small Town</h2>
+  <p>A town&rsquo;s identity is rarely one thing. It is an old language still spoken at home, a dish changed by a hundred families, a festival timed to the harvest and a craft learned by watching rather than being told. We write about all of it, and about the people who keep it alive.</p>
+  <div class="fe-grid">
+    <div class="card fe">
+      <h3>Everyday Language</h3>
+      <p>Regional dialects carry proverbs, jokes and entire ways of thinking. Even ten words of the local language will change how a day goes.</p>
+    </div>
+    <div class="card fe">
+      <h3>Food With A Story</h3>
+      <p>Most dishes began as a way to use what was available in a particular season. The recipe matters; the reason behind it matters more.</p>
+    </div>
+    <div class="card fe">
+      <h3>Skills Passed By Hand</h3>
+      <p>Weaving, pottery, boat building, bell casting — techniques that cannot be written down, only shown. Our workshop visits exist for this reason.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Cultural Highlights -->
+<section class="section container">
+  <h2>Signature Experiences</h2>
+  <div class="cards-grid">
+    <div class="card">
+      <h3>Market Morning Walk</h3>
+      <p>Arrive before sunrise, follow the produce, and eat breakfast at the counter like a regular. Half a day, and the most memorable of the trip.</p>
+    </div>
+    <div class="card">
+      <h3>Workshop Afternoon</h3>
+      <p>A few hours with a maker, learning the real technique. You will leave with something imperfect and a much better sense of the craft.</p>
+    </div>
+    <div class="card">
+      <h3>Festival Weekend</h3>
+      <p>Find the family seating, follow the drums, stay past the fireworks. We include the etiquette notes that keep you a welcome guest.</p>
+    </div>
+    <div class="card">
+      <h3>Evening Language Hour</h3>
+      <p>A relaxed local meetup for swapping phrases and stories. No classroom pressure and no wrong answers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Travel Principles -->
+<section class="section container">
+  <h2>Our Ground Rules</h2>
+  <div class="fe-grid">
+    <div class="card fe"><h3>Ask First</h3><p>No photographs of people, ceremonies or private spaces without a clear yes. A no is a complete answer.</p></div>
+    <div class="card fe"><h3>Pay Directly</h3><p>Guides, cooks and drivers are booked and paid by you, at a rate we publish. No commission taken from a local host.</p></div>
+    <div class="card fe"><h3>Credit by Name</h3><p>Makers and elders are named in every piece. If we could not use your name, we would not publish the story.</p></div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="section container">
+  <h2>Local Culture &amp; Travel by the Numbers</h2>
+  <div class="stats">
+    <div class="stat"><div class="n">240+</div><div class="t">Towns Covered</div></div>
+    <div class="stat"><div class="n">62</div><div class="t">Festivals Mapped</div></div>
+    <div class="stat"><div class="n">410</div><div class="t">Artisan Partners</div></div>
+    <div class="stat"><div class="n">1,180</div><div class="t">Local Interviews</div></div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section container">
+  <div class="cta card">
+    <h2>Know a place we should visit?</h2>
+    <p>Send us the town, the festival, the dish or the maker. We read every suggestion and credit the person who sent it.</p>
+    <form id="contact-form" style="max-width:720px;margin:18px auto 0;text-align:left">
+      <div class="form-row">
+        <div><label>Name</label><input name="name" required placeholder="Your name"></div>
+        <div><label>Email</label><input name="email" required type="email" placeholder="you@email.com"></div>
+      </div>
+      <div style="height:12px"></div>
+      <div><label>Message</label><textarea name="message" rows="4" placeholder="Share a place, festival, dish or maker we should look into."></textarea></div>
+      <div style="height:18px"></div>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <div>© 2025 Local Culture &amp; Travel. All rights reserved.</div>
+    <div style="display:flex;gap:12px;align-items:center">
+      <span class="badge">Streets • Stories • Small Towns</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Legal Footer -->
+<footer class="legal-footer">
+  <div class="legal-footer-inner">
+    <div style="opacity:.9">© 2025 Local Culture &amp; Travel</div>
+    <nav style="display:flex;gap:16px;flex-wrap:wrap">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="faq.html">FAQ</a>
+      <a href="sitemap.html">Sitemap</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/game.js"></script>
+</body>
+</html>
